@@ -33,32 +33,32 @@ function mix(correct) {
 }
 
 const schema = [{
-        logo: Browsersync,
+        logo: process.env.PUBLIC_URL + Browsersync,
         answers: mix('Browsersync'),
         correct: 'Browsersync',
     },
     {
-        logo: React,
+        logo: process.env.PUBLIC_URL + React,
         answers: mix('React'),
         correct: 'React',
     },
     {
-        logo: Kendo,
+        logo: process.env.PUBLIC_URL + Kendo,
         answers: mix('Kendo'),
         correct: 'Kendo',
     },
     {
-        logo: Webpack,
+        logo: process.env.PUBLIC_URL +  Webpack,
         answers: mix('Webpack'),
         correct: 'Webpack',
     },
     {
-        logo: GraphQL,
+        logo: process.env.PUBLIC_URL + GraphQL,
         answers: mix('GraphQL'),
         correct: 'GraphQL',
     },
     {
-        logo: Rxjs,
+        logo: process.env.PUBLIC_URL + Rxjs,
         answers: mix('Rxjs'),
         correct: 'Rxjs',
     }

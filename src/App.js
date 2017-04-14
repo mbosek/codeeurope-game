@@ -4,8 +4,6 @@ import remove from 'lodash/remove';
 import sample from 'lodash/sample';
 import React, { Component } from 'react';
 
-import codeeurope from './logos/codeeurope2.png';
-import opstalent from './logos/opstalent.png';
 import schema from './schema';
 
 class App extends Component {
@@ -55,7 +53,7 @@ class App extends Component {
       return (
         <div>
           <p className="App-intro">
-            <img src={this.state.item.logo} className="App-logo" alt="logo" />
+            <img src={`${process.env.PUBLIC_URL}/logos/codeeurope2.png`} className="App-logo" alt="logo" />
           </p> 
           <div>Time left for this question: {this.state.currentCount}</div>
           {this.state.item.answers.map((answer, i) => 
@@ -92,10 +90,10 @@ buttonClicked(answer, o) {
         <div className="App-header">
           <h2>Welcome to OpsTalent Game</h2>
           <p>Are you ready to join us?</p>
-          <img src={opstalent} className="App-logo" alt="Opstalent" />
+          <img src={`${process.env.PUBLIC_URL}/logos/opstalent.png`} className="App-logo" alt="Opstalent" />
         </div>
         {this.renderContent()}
-        <img src={codeeurope} className="App-logo" alt="Codeeurope" />
+        <img src={`${process.env.PUBLIC_URL}/logos/codeeurope2.png`} className="App-logo" alt="Codeeurope" />
       </div>     
     );
   }
