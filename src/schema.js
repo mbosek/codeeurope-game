@@ -25,32 +25,32 @@ function mix(correct) {
 }
 
 const schema = [{
-        logo: `${process.env.PUBLIC_URL} + ./logos/browsersync.png`,
+        logo: `${process.env.PUBLIC_URL}/logos/browsersync.png`,
         answers: mix('Browsersync'),
         correct: 'Browsersync',
     },
     {
-        logo: `${process.env.PUBLIC_URL} + ./logos/react.png`,
+        logo: `${process.env.PUBLIC_URL}/logos/react.png`,
         answers: mix('React'),
         correct: 'React',
     },
     {
-        logo: `${process.env.PUBLIC_URL} + ./logos/kendo.png`,
+        logo: `${process.env.PUBLIC_URL}/logos/kendo.png`,
         answers: mix('Kendo'),
         correct: 'Kendo',
     },
     {
-        logo: `${process.env.PUBLIC_URL} + ./logos/webpack.png`,
+        logo: `${process.env.PUBLIC_URL}/logos/webpack.png`,
         answers: mix('Webpack'),
         correct: 'Webpack',
     },
     {
-        logo: `${process.env.PUBLIC_URL} + ./logos/graphql.png`,
+        logo: `${process.env.PUBLIC_URL}/logos/graphql.png`,
         answers: mix('GraphQL'),
         correct: 'GraphQL',
     },
     {
-        logo: `${process.env.PUBLIC_URL} + ./logos/rxjs.png`,
+        logo: `${process.env.PUBLIC_URL}/logos/rxjs.png`,
         answers: mix('Rxjs'),
         correct: 'Rxjs',
     }
